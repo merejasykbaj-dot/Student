@@ -1,0 +1,2 @@
+import React from 'react';import{ScrollView}from'react-native';import CategoryItem from './CategoryItem';import{categories}from'../data/categories';
+export default function Categories({selected,onSelect}){return <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{marginVertical:12}}>{categories.map(item=><CategoryItem key={item.id} item={item} selected={selected===item.id} onPress={()=>onSelect(item.id)}/>)}</ScrollView>}

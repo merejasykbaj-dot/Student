@@ -1,0 +1,1 @@
+export const categories=[{id:'all',name:'Барлығы',icon:'grid-outline'},{id:'coffee',name:'Кофе',icon:'cafe-outline'},{id:'tea',name:'Шай',icon:'leaf-outline'},{id:'dessert',name:'Десерт',icon:'ice-cream-outline'},{id:'food',name:'Тағам',icon:'restaurant-outline'}];

@@ -1,0 +1,2 @@
+import React from 'react';import{StatusBar}from'expo-status-bar';import{SafeAreaProvider,SafeAreaView}from'react-native-safe-area-context';import{COLORS}from'./constants';import{ShopProvider}from'./src/context/ShopContext';import AppNavigator from'./src/navigation/AppNavigator';
+export default function App(){return <SafeAreaProvider><SafeAreaView style={{flex:1,backgroundColor:COLORS.background}} edges={['top']}><ShopProvider><StatusBar style="dark"/><AppNavigator/></ShopProvider></SafeAreaView></SafeAreaProvider>}

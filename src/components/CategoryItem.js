@@ -1,0 +1,3 @@
+import React from 'react';import{TouchableOpacity,Text,StyleSheet}from'react-native';import{Ionicons}from'@expo/vector-icons';import{COLORS}from'../../constants';
+export default function CategoryItem({item,selected,onPress}){return <TouchableOpacity onPress={onPress} style={[s.item,selected&&s.active]}><Ionicons name={item.icon} size={20} color={selected?'white':COLORS.primary}/><Text style={[s.text,selected&&{color:'white'}]}>{item.name}</Text></TouchableOpacity>}
+const s=StyleSheet.create({item:{flexDirection:'row',alignItems:'center',gap:7,padding:12,marginRight:9,borderRadius:14,backgroundColor:COLORS.light},active:{backgroundColor:COLORS.primary},text:{fontWeight:'700',color:COLORS.black}});

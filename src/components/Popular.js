@@ -1,0 +1,3 @@
+import React from 'react';import{View,Text,StyleSheet}from'react-native';import ProductItem from './ProductItem';import{COLORS}from'../../constants';
+export default function Popular({products,onOpen,onAdd,onFavorite,favorites,title='Танымал өнімдер'}){return <View><Text style={s.title}>{title}</Text><View style={s.grid}>{products.map(p=><ProductItem key={p.id} product={p} onPress={()=>onOpen(p)} onAdd={()=>onAdd(p.id)} onFavorite={()=>onFavorite(p.id)} favorite={favorites.includes(p.id)}/>)}</View></View>}
+const s=StyleSheet.create({title:{fontSize:22,fontWeight:'900',color:COLORS.black,marginVertical:16},grid:{flexDirection:'row',flexWrap:'wrap',justifyContent:'space-between'}});
