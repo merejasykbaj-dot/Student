@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "FocusFlow AI",
+    "slug": "focusflow-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.focusflow.student"
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-font"
+    ]
+  }
+}
